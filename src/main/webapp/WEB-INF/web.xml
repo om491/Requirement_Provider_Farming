@@ -1,0 +1,126 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>Requirement_Provider_Farming</display-name>
+
+    <!-- Welcome Page -->
+    <welcome-file-list>
+        <welcome-file>landingPage.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ================= CUSTOMER ================= -->
+
+    <servlet>
+        <servlet-name>RegisterCustomerServlet</servlet-name>
+        <servlet-class>com.servlet.RegisterCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterCustomerServlet</servlet-name>
+        <url-pattern>/RegisterCustomerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <servlet-class>com.servlet.CustomerLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CustomerLoginServlet</servlet-name>
+        <url-pattern>/CustomerLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= ADMIN ================= -->
+
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.servlet.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= VENDOR ================= -->
+
+    <!-- Vendor Registration -->
+    <servlet>
+        <servlet-name>vendorRegisterServlet</servlet-name>
+        <servlet-class>com.servlet.vendorRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>vendorRegisterServlet</servlet-name>
+        <url-pattern>/vendorRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Vendor Login -->
+    <servlet>
+        <servlet-name>VendorLoginServlet</servlet-name>
+        <servlet-class>com.servlet.VendorLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>VendorLoginServlet</servlet-name>
+        <url-pattern>/VendorLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <servlet>
+        <servlet-name>UploadProductServlet</servlet-name>
+        <servlet-class>com.servlet.UploadProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadProductServlet</servlet-name>
+        <url-pattern>/UploadProductServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>com.servlet.DeleteProductServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/DeleteProductServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ================= ORDERS ================= -->
+
+    <servlet>
+        <servlet-name>PlaceOrderServlet</servlet-name>
+        <servlet-class>com.servlet.PlaceOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlaceOrderServlet</servlet-name>
+        <url-pattern>/PlaceOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateOrderServlet</servlet-name>
+        <servlet-class>com.servlet.UpdateOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateOrderServlet</servlet-name>
+        <url-pattern>/UpdateOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>AddStockServlet</servlet-name>
+       <servlet-class>com.servlet.AddStockServlet</servlet-class>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>AddStockServlet</servlet-name>
+      <url-pattern>/AddStockServlet</url-pattern>
+   </servlet-mapping>
+
+</web-app>

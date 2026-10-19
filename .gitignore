@@ -1,0 +1,33 @@
+
+# Java compiled files
+
+*.class
+
+build/
+
+bin/
+
+target/
+
+
+
+# IDE files
+
+.idea/
+
+*.iml
+
+
+
+# Environment and secrets
+
+.env
+
+.env.*
+
+
+
+# Logs
+
+*.log
+
